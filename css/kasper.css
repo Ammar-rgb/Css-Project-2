@@ -60,8 +60,43 @@ ul {
 /* End Global Rule */
 
 /* Start Components */
+.main-heading {
+    text-align: center;
+}
 
+.main-heading h2 {
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
 
+.main-heading h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: black;
+    bottom: -30px;
+    width: 120px;
+}
+
+.main-heading h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.main-heading p {
+    
+}
 /* End Components */
 
 
@@ -271,3 +306,9 @@ header .container nav .form i {
     
 }
 /* End Landing */
+
+/* Start Services */
+.section {
+    padding: 100px;
+}
+/* End Services */
