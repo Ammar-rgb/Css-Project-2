@@ -321,6 +321,14 @@ header .container nav .form i {
     padding-bottom: var(--section-padding);
 }
 
+@media (min-width: 768px) {
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
 .services .srv-box {
     display: flex;
     justify-content: ;
